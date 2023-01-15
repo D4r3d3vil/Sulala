@@ -4,6 +4,7 @@ import {lang} from '../../db/language.db'
 import Ar_page from '../ar/Ar_page.svelte';
 import Fr_page from '../fr/Fr_page.svelte';
 import Ru_page from '../ru/Ru_page.svelte';
+import Menu from './menu/menu.svelte'
 let str, bstr, language, run;
 str = "russky"
 bstr = "russky"
@@ -78,6 +79,7 @@ setInterval(chngestr, 2000)
 </datalist>
 <button on:click={chnglang}>{bstr}</button>
 </div>
+<Menu></Menu>
 {/if}
 {#if language == "ru"}
 <Ru_page/>
