@@ -11,6 +11,7 @@ import {menus} from './menu.db'
     border: solid 1px black;
     width: 30vmin;
     margin-left: 2.5vmin;
+    display: inline-block;
 }
 img{
     width: 30vmin;
