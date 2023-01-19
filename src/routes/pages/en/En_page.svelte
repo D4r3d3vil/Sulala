@@ -1,6 +1,6 @@
 <script>
 import {get} from 'svelte/store'
-import {lang} from '../../db/language.db'
+import {lang} from '../../db/language.db.json'
 import Ar_page from '../ar/Ar_page.svelte';
 import Fr_page from '../fr/Fr_page.svelte';
 import Ru_page from '../ru/Ru_page.svelte';

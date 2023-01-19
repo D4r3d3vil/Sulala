@@ -3,5 +3,19 @@ import {menus} from './menu.db'
 </script>
 <hr>
 {#each Object.values(menus.en.menus) as catagory}
-<div class="catagory"><img src={catagory.feature} alt="..."><a href={catagory.link}>{catagory.for}</a></div>
+<div class="catagory"><h3><a href={catagory.link}>{catagory.for}</a></h3><img src={catagory.feature} alt="..." ><br><a href={catagory.link}>{catagory.feature_desc}</a></div>
 {/each}
+<style>
+.catagory{
+    text-align: center;
+    border: solid 1px black;
+    width: 30vmin;
+    margin-left: 2.5vmin;
+}
+img{
+    width: 30vmin;
+}
+a{
+    text-decoration: none;
+}
+</style>
